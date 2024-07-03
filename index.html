@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Generator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>QR Code Generator</h1>
+    </header>
+    <main>
+        <form id="qr-generation-form">
+            <input type="url" name="qr-code-content" id="qr-content" value="" placeholder="Enter URL" autocomplete="off" required />
+            <button>Generate QR Code</button>
+        </form>
+        <div id="qr-code"></div>
+    </main>
+    <footer>
+        <p>Developed by Desmond Ikilo</p>
+    </footer>
+</body>
+
+</html>
