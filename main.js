@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-    let qrContentInput = document.getElementById("qr-content");
-    let qrGenerationForm = document.getElementById("qr-generation-form");
+    const qrContentInput = document.getElementById("qr-content");
+    const qrGenerationForm = document.getElementById("qr-generation-form");
     let qrCode;
 
     function generateQrCode(qrContent) {
@@ -18,7 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
     qrGenerationForm.addEventListener("submit", e => {
         // Prevent form submission
         e.preventDefault();
-        let qrContent = qrContentInput.value;
+        console.log(qrCode);
+        const qrContent = qrContentInput.value;
         if (!qrCode) {
             // Generate code initially
             qrCode = generateQrCode(qrContent);
